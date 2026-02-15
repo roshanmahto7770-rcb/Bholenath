@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Maha Shivratri | Created by Roshan Kumar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#020617,#0f172a);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+/* HEADER */
+header{
+padding:60px 20px;
+background:radial-gradient(circle,#1e293b,#020617);
+position:relative;
+}
+
+.creator{
+position:absolute;
+top:15px;
+right:15px;
+background:#38bdf8;
+color:#020617;
+padding:8px 15px;
+border-radius:25px;
+font-weight:600;
+box-shadow:0 0 15px rgba(56,189,248,.6);
+}
+
+header h1{
+font-size:clamp(32px,6vw,55px);
+color:#38bdf8;
+}
+
+header p{
+margin-top:10px;
+color:#cbd5f5;
+font-size:18px;
+}
+
+/* CONTAINER */
+.container{
+max-width:1100px;
+margin:auto;
+padding:30px 20px;
+}
+
+/* IMAGE */
+.image img{
+width:100%;
+max-width:700px;
+border-radius:20px;
+box-shadow:0 0 30px rgba(56,189,248,.4);
+}
+
+/* CARD */
+.card{
+background:#1e293b;
+margin:25px 0;
+padding:30px;
+border-radius:18px;
+box-shadow:0 0 25px rgba(56,189,248,.25);
+}
+
+.card h2{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.mantra{
+font-size:26px;
+margin-top:15px;
+letter-spacing:2px;
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+border-radius:30px;
+background:#38bdf8;
+color:#020617;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.07);
+}
+
+/* MUSIC BOX */
+.music{
+background:#1e293b;
+padding:25px;
+border-radius:18px;
+margin-top:20px;
+}
+
+audio{
+width:100%;
+margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+margin-top:40px;
+padding:20px;
+background:#020617;
+color:#94a3b8;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+.card{padding:20px;}
+.mantra{font-size:22px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- BACKGROUND MUSIC -->
+<audio id="bgMusic" autoplay loop>
+
+<!-- Replace this link with your own Shiv Bhajan -->
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<header>
+<div class="creator">✨ Created by Roshan Kumar</div>
+
+<h1>🕉️ Happy Maha Shivratri 🕉️</h1>
+<p>May Lord Shiva & Maa Parvati bless your life with love and peace</p>
+</header>
+
+
+
+<div class="image">
+<img src="https://wallpaperaccess.com/full/6675102.jpg"
+alt="Lord Shiva and Maa Parvati">
+</div>
+
+<div class="card">
+<h2>🌙 Maha Shivratri Wishes</h2></br>
+Aaj ke din Shiv ji aur Parvati ji ki kripa
+aapke jeevan mein sadaiv bani rahe.<br><br>
+
+Meri taraf se aapko aur aapke parivaar ko
+Maha Shivratri ki hardik shubhkamnayein!
+</p>
+
+<div class="mantra">ॐ नमः शिवाय 🔱</div>
+</div>
+
+<div class="card">
+<h2>🔱 Divine Blessings</h2>
+
+<p>
+🙏 Jab bhi lage ki mujhse nahi ho payega,<br>
+jab confidence low ho jaya toh bolo... <br><br>
+
+🕉️ <b>Namo Parvati Pataye, Har Har Mahadev</b> 🔱<br><br>
+
+Mahadev khud himmat dete hain,
+aur har mushkil aasaan lagne lagti hai ✨
+</p>
+
+<a class="btn" onclick="shareWish()">📤 Share Wishes</a>
+</div>
+
+</div>
+
+<footer>
+🕉️ Made with ❤️ by <b>Roshan Kumar</b> | Maha Shivratri Special Website 🔱
+</footer>
+
+<script>
+function shareWish(){
+const text="🕉️ Happy Maha Shivratri! Har Har Mahadev — Created by Roshan Kumar";
+if(navigator.share){
+navigator.share({text});
+}else{
+alert("Sharing not supported on this device.");
+}
+}
+</script>
+
+</body>
+</html>
